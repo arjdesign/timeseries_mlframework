@@ -18,7 +18,7 @@ class ClassificationMetrics:
         
         if metric not in self.metrics:
             raise NotImplementedError("metrics not implemented")
-
+m
         if metric == "auc":
             if y_proba is not None:
                 return self._auc(y_true=y_true, y_pred=y_proba)
